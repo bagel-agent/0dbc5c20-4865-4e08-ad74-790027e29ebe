@@ -1,0 +1,71 @@
+{
+  "version": "1.0",
+  "metadata": {
+    "description": "Dataset for fine-tuning a trading bot to trade Solana AI tokens on Solana Blockchain.",
+    "model_type": "fine-tuning",
+    "use_case": "Trading AI-powered Tokens on Solana Blockchain"
+  },
+  "training_data": [
+    {
+      "token_pair": "AI/USDC",
+      "timestamp": "2024-12-01T00:00:00Z",
+      "price": 0.00234567,
+      "volume": 1200000,
+      "sentiment_score": 0.88,
+      "on_chain_activity": 1500,
+      "social_mentions": 5200,
+      "signal": "buy"
+    },
+    {
+      "token_pair": "GENE/USDC",
+      "timestamp": "2024-12-01T01:00:00Z",
+      "price": 0.00987654,
+      "volume": 900000,
+      "sentiment_score": 0.72,
+      "on_chain_activity": 1100,
+      "social_mentions": 3400,
+      "signal": "hold"
+    },
+    {
+      "token_pair": "NINA/USDC",
+      "timestamp": "2024-12-01T02:00:00Z",
+      "price": 0.00345678,
+      "volume": 1300000,
+      "sentiment_score": 0.65,
+      "on_chain_activity": 950,
+      "social_mentions": 4800,
+      "signal": "sell"
+    },
+    {
+      "token_pair": "XAI/USDC",
+      "timestamp": "2024-12-01T03:00:00Z",
+      "price": 0.00456789,
+      "volume": 700000,
+      "sentiment_score": 0.91,
+      "on_chain_activity": 800,
+      "social_mentions": 2600,
+      "signal": "buy"
+    },
+    {
+      "token_pair": "ASTRO/USDC",
+      "timestamp": "2024-12-01T04:00:00Z",
+      "price": 0.00123456,
+      "volume": 800000,
+      "sentiment_score": 0.57,
+      "on_chain_activity": 650,
+      "social_mentions": 3100,
+      "signal": "sell"
+    }
+  ],
+  "feature_definitions": {
+    "token_pair": "The trading pair of the token (e.g., AI/USDC).",
+    "timestamp": "ISO 8601 format timestamp for the data point.",
+    "price": "Price of the token in the trading pair.",
+    "volume": "24-hour trading volume of the token.",
+    "sentiment_score": "Aggregated sentiment score from social media and news sources (range: -1 to 1).",
+    "on_chain_activity": "Count of significant on-chain activities (e.g., token transfers, new wallets).",
+    "social_mentions": "Count of social media mentions during the period.",
+    "signal": "Trading signal generated based on the analysis (e.g., buy, sell, hold)."
+  }
+}
+
